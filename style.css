@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+
+
+p.tabbed {
+    text-indent: 30px;
+  }
+  #fixed-button {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+  }
+  
