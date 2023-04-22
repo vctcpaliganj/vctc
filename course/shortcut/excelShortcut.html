@@ -1,401 +1,478 @@
 <style type="text/css">
-  .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
-  .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-    overflow:hidden;padding:10px 5px;word-break:normal;}
-  .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-  .tg .tg-o3s4{background-color:#FAFBFC;color:#3A4F66;text-align:left;vertical-align:middle}
-  .tg .tg-ytd7{background-color:#FAFBFC;color:#3A4F66;font-weight:bold;text-align:left;vertical-align:top}
-  .tg .tg-rx5m{background-color:#FAFBFC;border-color:inherit;color:#3A4F66;font-weight:bold;text-align:left;vertical-align:middle}
-  .tg .tg-pwff{background-color:#FAFBFC;color:#3A4F66;font-weight:bold;text-align:left;vertical-align:middle}
-  @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
-  <div class="tg-wrap"><table class="tg">
-  <thead>
-    <tr>
-      <th class="tg-rx5m"><span style="font-weight:600">Shortcut Keys</span></th>
-      <th class="tg-pwff"><span style="font-weight:600">Functions</span></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+F</span></td>
-      <td class="tg-o3s4">Search the current sheet.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+G</span></td>
-      <td class="tg-o3s4">Go to a certain area.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+H</span></td>
-      <td class="tg-o3s4">Find and replace.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+I</span></td>
-      <td class="tg-o3s4">Puts italics on all cells in the highlighted section.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+K</span></td>
-      <td class="tg-o3s4">Inserts a hyperlink.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+L</span></td>
-      <td class="tg-o3s4">Opens the <span style="font-style:italic">Create Table</span> dialog box.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+R</span></td>
-      <td class="tg-o3s4">Fill right. Fills the cell to the right with the contents of the selected cell. To fill more than one cell, select the source cell and press <span style="font-weight:bold">Ctrl+Shift+Right</span> to select multiple cells. Then press <span style="font-weight:bold">Ctrl+R</span> to fill them with the contents of the original cell.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Home</span></td>
-      <td class="tg-o3s4">Move to cell A1.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+End</span></td>
-      <td class="tg-o3s4">Move to the last cell with the text on the worksheet.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+P</span></td>
-      <td class="tg-o3s4">Opens the drop-down menu for the point size.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift+Insert</span></td>
-      <td class="tg-o3s4">Pastes what is stored on the clipboard.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift+Page Up</span></td>
-      <td class="tg-o3s4">In a single column, highlight all cells above that are selected.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift+Page Down</span></td>
-      <td class="tg-o3s4">In a single column, highlight all cells above that are selected.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift+Home</span></td>
-      <td class="tg-o3s4">Highlights all text to the left of the cursor.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift+End</span></td>
-      <td class="tg-o3s4">Highlights all text to the right of the cursor.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift+Up Arrow</span></td>
-      <td class="tg-o3s4">Extends the highlighted area up to one cell.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift+Down Arrow</span></td>
-      <td class="tg-o3s4">Extends the highlighted area down one cell.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift+Left Arrow</span></td>
-      <td class="tg-o3s4">Extends the highlighted area left one character.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift +Right Arrow</span></td>
-      <td class="tg-o3s4">Extends the highlighted area right one character.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+S</span></td>
-      <td class="tg-o3s4">Saves the open worksheet.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Z</span></td>
-      <td class="tg-o3s4">Undo the last action.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+1</span></td>
-      <td class="tg-o3s4">Changes the format of the selected cells.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+2</span></td>
-      <td class="tg-o3s4">Bolds all cells in the highlighted section.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+T</span></td>
-      <td class="tg-o3s4">Open the <span style="font-style:italic">Create Table</span> dialog box.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+W</span></td>
-      <td class="tg-o3s4">Closes the current workbook.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+X</span></td>
-      <td class="tg-o3s4">Cuts all cells in the highlighted section.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Y</span></td>
-      <td class="tg-o3s4">Repeats the last entry.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+U</span></td>
-      <td class="tg-o3s4">Underlines all cells in the highlighted section.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+V</span></td>
-      <td class="tg-o3s4">Pastes everything copied onto the clipboard.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F1</span></td>
-      <td class="tg-o3s4">Opens the help menu.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F2</span></td>
-      <td class="tg-o3s4">Edits the selected cell.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F3</span></td>
-      <td class="tg-o3s4">After a name is created, F3 will paste names.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F4</span></td>
-      <td class="tg-o3s4">Repeats the last action. For example, if you changed the color of the text in another cell, pressing F4 will change the text in the cell to the same color.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F5</span></td>
-      <td class="tg-o3s4">Goes to a specific cell. For example, C6.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F6</span></td>
-      <td class="tg-o3s4">Move to the next pane.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F7</span></td>
-      <td class="tg-o3s4">Spell-check selected text or document.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F8</span></td>
-      <td class="tg-o3s4">Enters Extend Mode.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F9</span></td>
-      <td class="tg-o3s4">Recalculates every workbook.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F10</span></td>
-      <td class="tg-o3s4">Activates the menu bar.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F11</span></td>
-      <td class="tg-o3s4">Creates a chart from selected data.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">F12</span></td>
-      <td class="tg-o3s4">Save As option.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Alt+Shift+F2</span></td>
-      <td class="tg-o3s4">Saves the current worksheet.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+N</span></td>
-      <td class="tg-o3s4">Creates a new workbook.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+O</span></td>
-      <td class="tg-o3s4">Opens a workbook.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+P</span></td>
-      <td class="tg-o3s4">Print the current sheet.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+3</span></td>
-      <td class="tg-o3s4">Puts italics on all cells in the highlighted section.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+4</span></td>
-      <td class="tg-o3s4">Underlines all cells in the highlighted section.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+5</span></td>
-      <td class="tg-o3s4">Puts a strikethrough all cells in the highlighted section.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+6</span></td>
-      <td class="tg-o3s4">Shows or hides objects.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+7</span></td>
-      <td class="tg-o3s4">Shows or hides the toolbar.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+8</span></td>
-      <td class="tg-o3s4">Toggles the outline symbols.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+9</span></td>
-      <td class="tg-o3s4">Hides rows.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+0</span></td>
-      <td class="tg-o3s4">Hides columns.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+:</span></td>
-      <td class="tg-o3s4">Enters the current time.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+;</span></td>
-      <td class="tg-o3s4">Enters the current date.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+`</span></td>
-      <td class="tg-o3s4">Changes between displaying cell values or formulas in the worksheet.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+’</span></td>
-      <td class="tg-o3s4">Copies a formula from the cell above.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+”</span></td>
-      <td class="tg-o3s4">Copies value from the cell above.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+-</span></td>
-      <td class="tg-o3s4">Deletes the selected column or row.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+=</span></td>
-      <td class="tg-o3s4">Inserts a new column or row.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+~</span></td>
-      <td class="tg-o3s4">Switches between showing Excel formulas or their values in cells.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+!</span></td>
-      <td class="tg-o3s4">Applies comma formatting.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+$</span></td>
-      <td class="tg-o3s4">Applies currency formatting.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+#</span></td>
-      <td class="tg-o3s4">Applies date formatting.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+%</span></td>
-      <td class="tg-o3s4">Applies percentage formatting.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+^</span></td>
-      <td class="tg-o3s4">Applies exponential formatting.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+*</span></td>
-      <td class="tg-o3s4">Selects the current region around the active cell.</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+SHIFT+;</span></td>
-      <td class="tg-o3s4">Enter the current Time</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+;</span></td>
-      <td class="tg-o3s4">Enter the current date</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift+F3</span></td>
-      <td class="tg-o3s4">Open the Insert Function window</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift+F5</span></td>
-      <td class="tg-o3s4">Opens Find and Replace dialog box</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+A</span></td>
-      <td class="tg-o3s4">Select all contents of the worksheets</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+B</span></td>
-      <td class="tg-o3s4">Bold highlighted selection</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+I</span></td>
-      <td class="tg-o3s4">Italic highlighted selection</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+K</span></td>
-      <td class="tg-o3s4">Insert Link</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+U</span></td>
-      <td class="tg-o3s4">Underline highlighted selection</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+P</span></td>
-      <td class="tg-o3s4">Bring out the print dialog box to being prating</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+Z</span></td>
-      <td class="tg-o3s4">Undo the last action</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+F9</span></td>
-      <td class="tg-o3s4">Minimize current workbook</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+F10</span></td>
-      <td class="tg-o3s4">Minimize currently selected workbook</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+F6</span></td>
-      <td class="tg-o3s4">Switch between open workbooks/ Windows</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+</span></td>
-      <td class="tg-o3s4">Page Up Move the previous sheet between Excel worksheets in the same Excel<br>document</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+P</span></td>
-      <td class="tg-o3s4">Being up the print dialog box to being printing</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+Z</span></td>
-      <td class="tg-o3s4">Undo the last action</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+ Page Down</span></td>
-      <td class="tg-o3s4">Move the next sheet between Excel worksheets in the same Excel document</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+ Tab</span></td>
-      <td class="tg-o3s4">Move between or more open Excel Files</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">ALT+=</span></td>
-      <td class="tg-o3s4">Create a formula to sum all of the above cells</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">Shift + home</span></td>
-      <td class="tg-o3s4">Go to the first cell in the current row</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL + shift+!</span></td>
-      <td class="tg-o3s4">Format number in comma format</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL + shift+$</span></td>
-      <td class="tg-o3s4">Format number in currency format</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL + shift+#</span></td>
-      <td class="tg-o3s4">Format number in date format</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL + shift+%</span></td>
-      <td class="tg-o3s4">Format number in a percentage format</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL +</span> <span style="font-weight:bold">shift+@</span></td>
-      <td class="tg-o3s4">Format number in time format</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">CTRL+ SPACE</span></td>
-      <td class="tg-o3s4">Select entire column</td>
-    </tr>
-    <tr>
-      <td class="tg-ytd7"><span style="font-weight:bold">SHIFT+SPACE</span></td>
-      <td class="tg-o3s4">Select entire row</td>
-    </tr>
-  </tbody>
-  </table></div>
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0px auto;
+  }
+
+  .tg td {
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 1px;
+
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg th {
+    border-color: black;
+    border-style: solid;
+  
+  
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg .tg-o3s4 {
+   
+
+    text-align: left;
+    vertical-align: middle
+  }
+
+  .tg .tg-ytd7 {
+ 
+    color: #3A4F66;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top
+  }
+
+  .tg .tg-rx5m {
+ 
+    border-color: inherit;
+    color: #3A4F66;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle
+  }
+
+  .tg .tg-pwff {
+   
+    color: #3A4F66;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle
+  }
+
+  @media screen and (max-width: 767px) {
+    .tg {
+      width: auto !important;
+    }
+
+    .tg col {
+      width: auto !important;
+    }
+
+    .tg-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: auto 0px;
+    }
+  }
+  body { 
+    background-image: url('../../image/background4.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover
+    
+  }
+</style>
+<div class="tg-wrap">
+  <table class="tg">
+  
+    <tbody>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+F</span></td>
+        <td class="tg-o3s4">Search the current sheet.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+G</span></td>
+        <td class="tg-o3s4">Go to a certain area.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+H</span></td>
+        <td class="tg-o3s4">Find and replace.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+I</span></td>
+        <td class="tg-o3s4">Puts italics on all cells in the highlighted section.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+K</span></td>
+        <td class="tg-o3s4">Inserts a hyperlink.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+L</span></td>
+        <td class="tg-o3s4">Opens the <span style="font-style:italic">Create Table</span> dialog box.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+R</span></td>
+        <td class="tg-o3s4">Fill right. Fills the cell to the right with the contents of the selected cell. To fill more
+          than one cell, select the source cell and press <span style="font-weight:bold">Ctrl+Shift+Right</span> to
+          select multiple cells. Then press <span style="font-weight:bold">Ctrl+R</span> to fill them with the contents
+          of the original cell.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Home</span></td>
+        <td class="tg-o3s4">Move to cell A1.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+End</span></td>
+        <td class="tg-o3s4">Move to the last cell with the text on the worksheet.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+P</span></td>
+        <td class="tg-o3s4">Opens the drop-down menu for the point size.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift+Insert</span></td>
+        <td class="tg-o3s4">Pastes what is stored on the clipboard.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift+Page Up</span></td>
+        <td class="tg-o3s4">In a single column, highlight all cells above that are selected.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift+Page Down</span></td>
+        <td class="tg-o3s4">In a single column, highlight all cells above that are selected.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift+Home</span></td>
+        <td class="tg-o3s4">Highlights all text to the left of the cursor.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift+End</span></td>
+        <td class="tg-o3s4">Highlights all text to the right of the cursor.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift+Up Arrow</span></td>
+        <td class="tg-o3s4">Extends the highlighted area up to one cell.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift+Down Arrow</span></td>
+        <td class="tg-o3s4">Extends the highlighted area down one cell.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift+Left Arrow</span></td>
+        <td class="tg-o3s4">Extends the highlighted area left one character.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift +Right Arrow</span></td>
+        <td class="tg-o3s4">Extends the highlighted area right one character.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+S</span></td>
+        <td class="tg-o3s4">Saves the open worksheet.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Z</span></td>
+        <td class="tg-o3s4">Undo the last action.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+1</span></td>
+        <td class="tg-o3s4">Changes the format of the selected cells.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+2</span></td>
+        <td class="tg-o3s4">Bolds all cells in the highlighted section.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+T</span></td>
+        <td class="tg-o3s4">Open the <span style="font-style:italic">Create Table</span> dialog box.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+W</span></td>
+        <td class="tg-o3s4">Closes the current workbook.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+X</span></td>
+        <td class="tg-o3s4">Cuts all cells in the highlighted section.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Y</span></td>
+        <td class="tg-o3s4">Repeats the last entry.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+U</span></td>
+        <td class="tg-o3s4">Underlines all cells in the highlighted section.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+V</span></td>
+        <td class="tg-o3s4">Pastes everything copied onto the clipboard.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F1</span></td>
+        <td class="tg-o3s4">Opens the help menu.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F2</span></td>
+        <td class="tg-o3s4">Edits the selected cell.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F3</span></td>
+        <td class="tg-o3s4">After a name is created, F3 will paste names.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F4</span></td>
+        <td class="tg-o3s4">Repeats the last action. For example, if you changed the color of the text in another cell,
+          pressing F4 will change the text in the cell to the same color.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F5</span></td>
+        <td class="tg-o3s4">Goes to a specific cell. For example, C6.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F6</span></td>
+        <td class="tg-o3s4">Move to the next pane.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F7</span></td>
+        <td class="tg-o3s4">Spell-check selected text or document.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F8</span></td>
+        <td class="tg-o3s4">Enters Extend Mode.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F9</span></td>
+        <td class="tg-o3s4">Recalculates every workbook.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F10</span></td>
+        <td class="tg-o3s4">Activates the menu bar.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F11</span></td>
+        <td class="tg-o3s4">Creates a chart from selected data.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">F12</span></td>
+        <td class="tg-o3s4">Save As option.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Alt+Shift+F2</span></td>
+        <td class="tg-o3s4">Saves the current worksheet.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+N</span></td>
+        <td class="tg-o3s4">Creates a new workbook.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+O</span></td>
+        <td class="tg-o3s4">Opens a workbook.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+P</span></td>
+        <td class="tg-o3s4">Print the current sheet.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+3</span></td>
+        <td class="tg-o3s4">Puts italics on all cells in the highlighted section.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+4</span></td>
+        <td class="tg-o3s4">Underlines all cells in the highlighted section.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+5</span></td>
+        <td class="tg-o3s4">Puts a strikethrough all cells in the highlighted section.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+6</span></td>
+        <td class="tg-o3s4">Shows or hides objects.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+7</span></td>
+        <td class="tg-o3s4">Shows or hides the toolbar.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+8</span></td>
+        <td class="tg-o3s4">Toggles the outline symbols.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+9</span></td>
+        <td class="tg-o3s4">Hides rows.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+0</span></td>
+        <td class="tg-o3s4">Hides columns.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+:</span></td>
+        <td class="tg-o3s4">Enters the current time.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+;</span></td>
+        <td class="tg-o3s4">Enters the current date.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+`</span></td>
+        <td class="tg-o3s4">Changes between displaying cell values or formulas in the worksheet.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+’</span></td>
+        <td class="tg-o3s4">Copies a formula from the cell above.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+”</span></td>
+        <td class="tg-o3s4">Copies value from the cell above.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+-</span></td>
+        <td class="tg-o3s4">Deletes the selected column or row.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+=</span></td>
+        <td class="tg-o3s4">Inserts a new column or row.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+~</span></td>
+        <td class="tg-o3s4">Switches between showing Excel formulas or their values in cells.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+!</span></td>
+        <td class="tg-o3s4">Applies comma formatting.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+$</span></td>
+        <td class="tg-o3s4">Applies currency formatting.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+#</span></td>
+        <td class="tg-o3s4">Applies date formatting.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+%</span></td>
+        <td class="tg-o3s4">Applies percentage formatting.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+^</span></td>
+        <td class="tg-o3s4">Applies exponential formatting.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Ctrl+Shift+*</span></td>
+        <td class="tg-o3s4">Selects the current region around the active cell.</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+SHIFT+;</span></td>
+        <td class="tg-o3s4">Enter the current Time</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+;</span></td>
+        <td class="tg-o3s4">Enter the current date</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift+F3</span></td>
+        <td class="tg-o3s4">Open the Insert Function window</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift+F5</span></td>
+        <td class="tg-o3s4">Opens Find and Replace dialog box</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+A</span></td>
+        <td class="tg-o3s4">Select all contents of the worksheets</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+B</span></td>
+        <td class="tg-o3s4">Bold highlighted selection</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+I</span></td>
+        <td class="tg-o3s4">Italic highlighted selection</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+K</span></td>
+        <td class="tg-o3s4">Insert Link</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+U</span></td>
+        <td class="tg-o3s4">Underline highlighted selection</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+P</span></td>
+        <td class="tg-o3s4">Bring out the print dialog box to being prating</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+Z</span></td>
+        <td class="tg-o3s4">Undo the last action</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+F9</span></td>
+        <td class="tg-o3s4">Minimize current workbook</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+F10</span></td>
+        <td class="tg-o3s4">Minimize currently selected workbook</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+F6</span></td>
+        <td class="tg-o3s4">Switch between open workbooks/ Windows</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+</span></td>
+        <td class="tg-o3s4">Page Up Move the previous sheet between Excel worksheets in the same Excel<br>document</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+P</span></td>
+        <td class="tg-o3s4">Being up the print dialog box to being printing</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+Z</span></td>
+        <td class="tg-o3s4">Undo the last action</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+ Page Down</span></td>
+        <td class="tg-o3s4">Move the next sheet between Excel worksheets in the same Excel document</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+ Tab</span></td>
+        <td class="tg-o3s4">Move between or more open Excel Files</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">ALT+=</span></td>
+        <td class="tg-o3s4">Create a formula to sum all of the above cells</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">Shift + home</span></td>
+        <td class="tg-o3s4">Go to the first cell in the current row</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL + shift+!</span></td>
+        <td class="tg-o3s4">Format number in comma format</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL + shift+$</span></td>
+        <td class="tg-o3s4">Format number in currency format</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL + shift+#</span></td>
+        <td class="tg-o3s4">Format number in date format</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL + shift+%</span></td>
+        <td class="tg-o3s4">Format number in a percentage format</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL +</span> <span style="font-weight:bold">shift+@</span>
+        </td>
+        <td class="tg-o3s4">Format number in time format</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">CTRL+ SPACE</span></td>
+        <td class="tg-o3s4">Select entire column</td>
+      </tr>
+      <tr>
+        <td class="tg-ytd7"><span style="font-weight:bold">SHIFT+SPACE</span></td>
+        <td class="tg-o3s4">Select entire row</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

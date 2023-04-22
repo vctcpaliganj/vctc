@@ -1,22 +1,825 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shortcut</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div style="background-color: rgb(248, 21, 21); padding:10px; margin:10px; border-radius:8px;">
-        <h1 style="text-align:center; color:white">Work is going on...</h1>
-    </div>
+<style type="text/css">
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0px auto;
+  }
+
+  .tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg .tg-qhe2 {
+  
+    border-color: inherit;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top
+  }
+
+  .tg .tg-5rq3 {
    
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top
+  }
 
+  .tg .tg-citn {
+  
+    color: #333;
+    text-align: left;
+    vertical-align: top
+  }
 
+  @media screen and (max-width: 767px) {
+    .tg {
+      width: auto !important;
+    }
 
-   
+    .tg col {
+      width: auto !important;
+    }
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
-</html>
+    .tg-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: auto 0px;
+    }
+  }
+  body { 
+    background-image: url('../../image/background4.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover
+    
+  }
+</style>
+<div class="tg-wrap">
+  <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-qhe2" colspan="2">File</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-citn">Ctrl+N</td>
+        <td class="tg-citn">New...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+O</td>
+        <td class="tg-citn">Open...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+O Shft+Ctrl+O</td>
+        <td class="tg-citn">Browse...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Shft+Ctrl+O</td>
+        <td class="tg-citn">Open As...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+M</td>
+        <td class="tg-citn">Edit in ImageReady</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl W</td>
+        <td class="tg-citn">Close file in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+W</td>
+        <td class="tg-citn">Close All</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+W</td>
+        <td class="tg-citn">Close and Go To Bridge...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl S</td>
+        <td class="tg-citn">Save a file in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+S Alt+Ctrl+S</td>
+        <td class="tg-citn">Save As...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Save a Version in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Shft+Ctrl+S</td>
+        <td class="tg-citn">Save for Web...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">F12</td>
+        <td class="tg-citn">Revert</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Shft+Ctrl+I</td>
+        <td class="tg-citn">File Info...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+P</td>
+        <td class="tg-citn">Page Setup...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt Ctrl P</td>
+        <td class="tg-citn">Print with Preview in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+P</td>
+        <td class="tg-citn">Print...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt Shft Ctrl P</td>
+        <td class="tg-citn">Print One Copy in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Print Online...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+Q</td>
+        <td class="tg-citn">Exit</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Photoshop Edit</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl Z</td>
+        <td class="tg-citn">Undo/Redo in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft Ctrl Z</td>
+        <td class="tg-citn">Step Forward in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+Z</td>
+        <td class="tg-citn">Step Backward</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+F</td>
+        <td class="tg-citn">Fade...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+X F2</td>
+        <td class="tg-citn">Cut</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+C F3</td>
+        <td class="tg-citn">Copy</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+C</td>
+        <td class="tg-citn">Copy Merged</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+V F4</td>
+        <td class="tg-citn">Paste</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+V</td>
+        <td class="tg-citn">Paste Into</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+F5</td>
+        <td class="tg-citn">Fill...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl T</td>
+        <td class="tg-citn">Free Transform in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Transform</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+T</td>
+        <td class="tg-citn">Again</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+K</td>
+        <td class="tg-citn">Color Settings...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt Shft Ctrl K</td>
+        <td class="tg-citn">Keyboard Shortcuts in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Shft+Ctrl+M</td>
+        <td class="tg-citn">Menus...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Preferences</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+K</td>
+        <td class="tg-citn">General...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Adjustments</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+L</td>
+        <td class="tg-citn">Levels...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+L</td>
+        <td class="tg-citn">Auto Levels</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt Shft Ctrl L</td>
+        <td class="tg-citn">Auto Contrast in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+B</td>
+        <td class="tg-citn">Auto Color</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+M</td>
+        <td class="tg-citn">Curves...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+B</td>
+        <td class="tg-citn">Color Balance...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+U</td>
+        <td class="tg-citn">Hue/Saturation...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+U</td>
+        <td class="tg-citn">Desaturate</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+I</td>
+        <td class="tg-citn">Image Size...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt Ctrl C</td>
+        <td class="tg-citn">Canvas Size in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">New</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+N</td>
+        <td class="tg-citn">Layer...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+J</td>
+        <td class="tg-citn">Layer via Copy</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+J</td>
+        <td class="tg-citn">Layer via Cut</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+G</td>
+        <td class="tg-citn">Create/Release Clipping Mask</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+G</td>
+        <td class="tg-citn">Group Layers</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft Ctrl G</td>
+        <td class="tg-citn">Ungroup Layers in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft Ctrl ]</td>
+        <td class="tg-citn">Bring to Front in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+]</td>
+        <td class="tg-citn">Bring Forward</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+[</td>
+        <td class="tg-citn">Send Backward</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+[</td>
+        <td class="tg-citn">Send to Back</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+E</td>
+        <td class="tg-citn">Merge Layers</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft Ctrl E</td>
+        <td class="tg-citn">Merge Visible in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Select</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+A</td>
+        <td class="tg-citn">All</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+D</td>
+        <td class="tg-citn">Deselect</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+D</td>
+        <td class="tg-citn">Reselect</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+I Shft+F7</td>
+        <td class="tg-citn">Inverse</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+A</td>
+        <td class="tg-citn">All Layers</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+D Shft+F6</td>
+        <td class="tg-citn">Feather...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Filter</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+F</td>
+        <td class="tg-citn">Last Filter</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+X</td>
+        <td class="tg-citn">Extract...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+X</td>
+        <td class="tg-citn">Liquify...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Shft+Ctrl+X</td>
+        <td class="tg-citn">Pattern Maker...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+V</td>
+        <td class="tg-citn">Vanishing Point...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Proof Setup</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+Y</td>
+        <td class="tg-citn">Proof Colors</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+Y</td>
+        <td class="tg-citn">Gamut Warning</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl++ Ctrl+=</td>
+        <td class="tg-citn">Zoom In</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+-</td>
+        <td class="tg-citn">Zoom Out</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+0</td>
+        <td class="tg-citn">Fit on Screen</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+0</td>
+        <td class="tg-citn">Actual Pixels</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+H</td>
+        <td class="tg-citn">Extras</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Show&gt;</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+H</td>
+        <td class="tg-citn">Target Path</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+'</td>
+        <td class="tg-citn">Grid</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+;</td>
+        <td class="tg-citn">Guides</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl+R</td>
+        <td class="tg-citn">Rulers</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+;</td>
+        <td class="tg-citn">Snap</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+;</td>
+        <td class="tg-citn">Lock Guides</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+F9 F9</td>
+        <td class="tg-citn">Actions</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">F5</td>
+        <td class="tg-citn">Brushes in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">F6</td>
+        <td class="tg-citn">Color</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">F8</td>
+        <td class="tg-citn">Info</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">F7</td>
+        <td class="tg-citn">Layers</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Photoshop Help</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">F1</td>
+        <td class="tg-citn">Photoshop Help</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Photoshop Animation</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Shft+Ctrl+F</td>
+        <td class="tg-citn">New Frame</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Photoshop History</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+Z</td>
+        <td class="tg-citn">Step Forward</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+Z</td>
+        <td class="tg-citn">Step Backward</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Photoshop Layers</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+N</td>
+        <td class="tg-citn">New Layer...</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Alt+Ctrl+G</td>
+        <td class="tg-citn">Create/Release Clipping Mask</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Ctrl E</td>
+        <td class="tg-citn">Merge Layers in Photoshop</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shft+Ctrl+E</td>
+        <td class="tg-citn">Merge Visible</td>
+      </tr>
+      <tr>
+        <td class="tg-citn" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-5rq3" colspan="2">Tools</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Shortcut</td>
+        <td class="tg-citn">Tools</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">M</td>
+        <td class="tg-citn">Rectangular Marquee Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">M</td>
+        <td class="tg-citn">Elliptical Marquee Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">V</td>
+        <td class="tg-citn">Move Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">L</td>
+        <td class="tg-citn">Lasso Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">L</td>
+        <td class="tg-citn">Polygonal Lasso Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">L</td>
+        <td class="tg-citn">Magnetic Lasso Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">W</td>
+        <td class="tg-citn">Magic Wand Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">C</td>
+        <td class="tg-citn">Crop Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">K</td>
+        <td class="tg-citn">Slice Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">K</td>
+        <td class="tg-citn">Slice Select Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">J</td>
+        <td class="tg-citn">Spot Healing Brush Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">J</td>
+        <td class="tg-citn">Healing Brush Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">J</td>
+        <td class="tg-citn">Patch Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">J</td>
+        <td class="tg-citn">Red Eye Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">B</td>
+        <td class="tg-citn">Brush Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">B</td>
+        <td class="tg-citn">Pencil Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">B</td>
+        <td class="tg-citn">Color Replacement Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">S</td>
+        <td class="tg-citn">Clone Stamp Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">S</td>
+        <td class="tg-citn">Pattern Stamp Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Y</td>
+        <td class="tg-citn">History Brush Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Y</td>
+        <td class="tg-citn">Art History Brush</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">E</td>
+        <td class="tg-citn">Eraser Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">E</td>
+        <td class="tg-citn">Background Eraser Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">E</td>
+        <td class="tg-citn">Magic Eraser Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">G</td>
+        <td class="tg-citn">Gradient Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">G</td>
+        <td class="tg-citn">Paint Bucket Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">R</td>
+        <td class="tg-citn">Blur Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">R</td>
+        <td class="tg-citn">Sharpen Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">R</td>
+        <td class="tg-citn">Smudge Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">O</td>
+        <td class="tg-citn">Dodge Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">O</td>
+        <td class="tg-citn">Burn Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">O</td>
+        <td class="tg-citn">Sponge Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">A</td>
+        <td class="tg-citn">Path Selection Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">A</td>
+        <td class="tg-citn">Direct Selection Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">T</td>
+        <td class="tg-citn">Horizontal Type Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">T</td>
+        <td class="tg-citn">Vertical Type Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">T</td>
+        <td class="tg-citn">Horizontal Type Mask Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">T</td>
+        <td class="tg-citn">Vertical Type Mask Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">P</td>
+        <td class="tg-citn">Pen Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">P</td>
+        <td class="tg-citn">Freeform Pen Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">U</td>
+        <td class="tg-citn">Rectangle Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">U</td>
+        <td class="tg-citn">Rounded Rectangle Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">U</td>
+        <td class="tg-citn">Ellipse Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">U</td>
+        <td class="tg-citn">Polygon Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">U</td>
+        <td class="tg-citn">Line Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">U</td>
+        <td class="tg-citn">Custom Shape Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">N</td>
+        <td class="tg-citn">Notes Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">N</td>
+        <td class="tg-citn">Audio Annotation Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">I</td>
+        <td class="tg-citn">Eyedropper Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">I</td>
+        <td class="tg-citn">Color Sampler Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">I</td>
+        <td class="tg-citn">Measure Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">H</td>
+        <td class="tg-citn">Hand Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Z</td>
+        <td class="tg-citn">Zoom Tool</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">D</td>
+        <td class="tg-citn">Default Foreground/Background Colors</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">X</td>
+        <td class="tg-citn">Switch Foreground/Background Colors</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">Q</td>
+        <td class="tg-citn">Toggle Standard/Quick Mask Modes</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">F</td>
+        <td class="tg-citn">Toggle Screen Modes</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">/</td>
+        <td class="tg-citn">Toggle Preserve Transparency</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">[</td>
+        <td class="tg-citn">Decrease Brush Size</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">]</td>
+        <td class="tg-citn">Increase Brush Size</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">{</td>
+        <td class="tg-citn">Decrease Brush Hardness</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">}</td>
+        <td class="tg-citn">Increase Brush Hardness</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">,</td>
+        <td class="tg-citn">Previous Brush</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">.</td>
+        <td class="tg-citn">Next Brush</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">&lt;</td>
+        <td class="tg-citn">First Brush</td>
+      </tr>
+      <tr>
+        <td class="tg-citn">&gt;</td>
+        <td class="tg-citn">Last Brush</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
