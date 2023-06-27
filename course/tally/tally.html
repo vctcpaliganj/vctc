@@ -24,6 +24,30 @@
     h6 {
       color: red;
     }
+
+    .table-container {
+      width: 100%;
+      height: 200px;
+      overflow: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+
+    }
+
+    td {
+      border: 1px solid #ccc;
+      vertical-align: text-top;
+      word-wrap:break-word;
+    }
   </style>
 
 
@@ -184,7 +208,8 @@
     </h6>
     <p>
       An amount that is stored as a cash in hand after reducing the expense (खर्च) is called income.<br>
-    <p style="text-align: center; background-color:rgb(7, 139, 196); padding:4px; margin:30px; border-radius:5px;color:white;">
+    <p
+      style="text-align: center; background-color:rgb(7, 139, 196); padding:4px; margin:30px; border-radius:5px;color:white;">
       Earning – Expense = Income
 
     </p>
@@ -283,7 +308,7 @@
       Example :-
     </h6>
     <p>
-    
+
       1. Monu received ₹ 1000 from Sonu.<br>
       Monu A/C = Dr<br>
       Sonu A/C = Cr<br><br>
@@ -298,8 +323,89 @@
     <h5>
       Journal Entry(रोजनामचा)
     </h5>
+    <p>
+      The process of keeping record of all the transaction together in order of date is called Journal Entry.<br>
+      In Journal Entry, All the transaction of all nature are kept together.<br><br>
+      Note:-<br>
+      The process of maintaining transaction separately of all the Ledger (Account) is called “Ledger Posting”.
+
+    </p>
+    <h6>
+      Format of Journal Entry
+    </h6>
 
 
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Particular</th>
+            <th>LF</th>
+            <th>Debit(dr)</th>
+            <th>Credit(Cr)</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>Narration:-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+    <p>
+      1. In Date column, we just write Date & Month of transaction.<br>
+      2. In Particular column, we write the name of effected account followed by debit up and credit down.<br>
+      To the bottom area of particular column, we write the reason of transaction, called Narration.
+      3. LF = (Ledger Folio) column is used to write the voucher number of previous transaction.<br>
+      4. The debited amount and credited amount are written in respective columns.<br>
+    </p>
+    <h6>
+      Rules of Journal Entry
+    </h6>
+
+    <p>
+      1. Identity the effected accountant in the transaction and then identity its types.<br>
+      2. Apply the rules of accounting to their types.<br>
+      3. Identity debit and credits.<br>
+    </p>
+    <h6>
+      Example:-
+    </h6>
+    <p>
+      1. Paid ₹ 5000 to Mohan for Rent on 1 Aug
+    </p>
+
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Particular</th>
+            <th>Debit(dr)</th>
+            <th>Credit(Cr)</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1/8</td>
+            <td>Mohan A/C (Dr) <br> Cash A/C (Cr)<br> (Paid rent)</td>
+            <td>5000</td>
+            <td><br>5000</td>
+            
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
 
 
 
