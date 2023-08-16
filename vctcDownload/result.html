@@ -1,58 +1,15 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>
-    
-  Result
-  </title>
-  <style>
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      display:list-item;
-  
-      margin: 10px;
-    }
-
-    a {
-      display: block;
-      padding: 10px;
-      color: #030022;
-      text-decoration: none;
-      border: 1px solid #565658;
-      border-radius: 5px;
-      transition: all 0.3s ease-in-out;
-      box-shadow: 3px 3px 3px rgb(209, 216, 219);
-    }
-
-    a:hover {
-      background-color: #ccc;
-    }
-    body { 
-      background-image: url('../image/background4.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center; 
-      background-size: cover
-      
-    }
- 
-  </style>
+    <title>Open Direct Link on Page Start</title>
+    <script>
+        window.onload = function() {
+            // Redirect to the direct link when the page loads
+            window.location.href = "https://vctcpaliganj.com/result.php";
+        };
+    </script>
 </head>
 <body>
-  <h1 style="text-align: center;">Test Result</h1>
-  <ul>
-    <li><a href="#"><p style="font-size: 20px;"> ADCA</p><img src="../image/adca.png" style="width:100px" alt=""></a></li>
-    <li><a href="#"><p style="font-size: 20px;"> DCA</p><img src="../image/computer.png" style="width:100px" alt=""></a></li>
-    <li><a href="#"><p style="font-size: 20px;"> DTP</p><img src="../image/dtp.png" style="width:100px" alt=""></a></li>
-    <li><a href="#"><p style="font-size: 20px;">TallyPrime</p><img src="../image/tallyprime.png" style="width:100px" alt=""></a></li>
-  </ul>
-
-
+    <p>This page will automatically redirect to a direct link.</p>
 </body>
 </html>
